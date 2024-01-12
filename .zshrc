@@ -27,6 +27,10 @@ fi
 alias la='ls -a'
 alias ll='ls -lah'
 
+# Ctrl+Left/Right to move between words
+bindkey "^[[1;5C" emacs-forward-word
+bindkey "^[[1;5D" emacs-backward-word
+
 # completions for go-task
 # original: https://github.com/sawadashota/go-task-completions
 # Listing commands from Taskfile.yml
