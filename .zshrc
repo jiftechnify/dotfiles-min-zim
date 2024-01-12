@@ -1,33 +1,4 @@
-# source ~/.zplug/init.zsh
-
-# zplug "zsh-users/zsh-completions"
-# zplug "zsh-users/zsh-autosuggestions"
-# zplug "zsh-users/zsh-syntax-highlighting", defer:2
-# zplug "zsh-users/zsh-history-substring-search"
-# zplug "mafredri/zsh-async", from:github
-# zplug "sindresorhus/pure", use:"pure.zsh", from:github, as:theme
-
-# # Install plugins if there are plugins that have not been installed
-# if ! zplug check --verbose; then
-#     printf "Install? [y/N]: "
-#     if read -q; then
-#         echo; zplug install
-#     fi
-# fi
-
-# # Then, source plugins and add commands to $PATH
-# zplug load
-
-# # enable completions
-# autoload -Uz compinit; compinit -u
-
-# # enable custom prompt
-# autoload -U promptinit; promptinit
-# prompt pure > /dev/null
-
-# configure plugins
-ZIM_HOME=${PWD}/.zim
-ZDOTDIR=${PWD}
+ZIM_HOME=~/.zim
 
 # Download zimfw plugin manager if missing.
 if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
